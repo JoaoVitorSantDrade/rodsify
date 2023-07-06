@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "553982853789",
+    "project_id": "rodsify-firebase",
+    "storage_bucket": "rodsify-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553982853789:android:066d3cc75c04b3e0728a74",
+        "android_client_info": {
+          "package_name": "com.example.rodsify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553982853789-2d722iint5c68a9c3aakjtjubfvq8jke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh5VliXZDG2KOzfZ0uOOzpimzk_FkW5yk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553982853789-2d722iint5c68a9c3aakjtjubfvq8jke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
