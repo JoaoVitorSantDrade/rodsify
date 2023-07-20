@@ -19,7 +19,7 @@ class _CartButtonState extends State<CartButton> {
           color: const Color(0xFFA71D31),
           onPressed: () {},
           shape: const CircleBorder(),
-          padding: const EdgeInsets.all(24),
+          padding: const EdgeInsets.all(16),
           textColor: Colors.white,
           child: const Icon(
             Icons.shopping_cart_outlined,
@@ -38,17 +38,18 @@ class _CartButtonState extends State<CartButton> {
                 color: Color.fromRGBO(63, 13, 18, 0.5),
               ),
               child: BackdropFilter(
-                  filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
-                  child: Text(
-                    cartCount.toString(),
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 14,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w600,
-                    ),
-                  )),
+                filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
+                child: Text(
+                  cartCount.toString(),
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
             ),
           ),
         ),

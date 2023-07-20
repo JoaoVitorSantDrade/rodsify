@@ -5,6 +5,7 @@ import 'package:rodsify/firebase_options.dart';
 import 'package:rodsify/views/login_view.dart';
 import 'package:rodsify/views/main_view.dart';
 import 'package:rodsify/views/register_view.dart';
+import 'package:rodsify/views/restaurantInfo_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/login',
+      initialRoute: '/main',
       title: 'Rodsify',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
@@ -33,7 +34,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (context) => const LoginView(),
         '/main': (context) => const MainView(),
-        '/register': (context) => const RegisterView()
+        '/register': (context) => const RegisterView(),
+        '/main/restauraunt': (context) => const RestaurantInfoView(),
       },
     );
   }

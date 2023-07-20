@@ -13,7 +13,7 @@ class _MyWidgetState extends State<TypeFoodBar> {
   Widget build(BuildContext context) {
     return Container(
       height: 30,
-      margin: const EdgeInsets.symmetric(vertical: 10),
+      margin: const EdgeInsets.only(bottom: 10, top: 25),
       child: ListView(
           shrinkWrap: true,
           physics: const ClampingScrollPhysics(),

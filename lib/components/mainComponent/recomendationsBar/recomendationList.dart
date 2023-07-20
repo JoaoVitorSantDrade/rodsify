@@ -34,13 +34,13 @@ class _RecomendationListState extends State<RecomendationList> {
               color: Colors.black,
               fontSize: 18,
               fontFamily: 'Poppins',
-              fontWeight: FontWeight.w400,
+              fontWeight: FontWeight.w600,
             ),
           ),
         ),
         Container(
           height: 110,
-          margin: const EdgeInsets.only(bottom: 10, left: 10, right: 10),
+          margin: const EdgeInsets.only(bottom: 10),
           child: ListView(
               shrinkWrap: true,
               physics: const ClampingScrollPhysics(),

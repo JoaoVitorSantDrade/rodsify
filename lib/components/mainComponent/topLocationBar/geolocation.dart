@@ -32,7 +32,7 @@ class _MyWidgetState extends State<RodGeoLocator> {
         Position? position = await Geolocator.getCurrentPosition();
         List<Placemark> address = await placemarkFromCoordinates(
             position.latitude, position.longitude);
-        return "${address[0].subAdministrativeArea}, ${address[0].thoroughfare}";
+        return "${address[0].subAdministrativeArea}, ${address[0].isoCountryCode}";
       } else if (permission == LocationPermission.deniedForever) {
         return Geolocator.openLocationSettings().toString();
       }

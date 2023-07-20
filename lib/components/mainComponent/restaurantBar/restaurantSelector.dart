@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rodsify/components/mainComponent/restaurantBar/restaurantComponent.dart';
 
 class RestaurantSelector extends StatefulWidget {
   const RestaurantSelector({super.key});
@@ -17,26 +18,12 @@ class _RestaurantSelectorState extends State<RestaurantSelector> {
           physics: const ClampingScrollPhysics(),
           scrollDirection: Axis.vertical,
           children: const [
-            Placeholder(
-              fallbackHeight: 150,
-              fallbackWidth: 80,
-            ),
-            Placeholder(
-              fallbackHeight: 150,
-              fallbackWidth: 80,
-            ),
-            Placeholder(
-              fallbackHeight: 150,
-              fallbackWidth: 80,
-            ),
-            Placeholder(
-              fallbackHeight: 150,
-              fallbackWidth: 80,
-            ),
-            Placeholder(
-              fallbackHeight: 150,
-              fallbackWidth: 80,
-            ),
+            RestaurantComponent(),
+            RestaurantComponent(),
+            RestaurantComponent(),
+            RestaurantComponent(),
+            RestaurantComponent(),
+            RestaurantComponent(),
           ]),
     );
   }

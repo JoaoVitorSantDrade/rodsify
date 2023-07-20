@@ -22,20 +22,31 @@ class MainView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const RodGeoLocator(),
             Expanded(
-              child: ListView(
-                shrinkWrap: true,
-                physics: const ClampingScrollPhysics(),
-                scrollDirection: Axis.vertical,
-                addAutomaticKeepAlives: true,
-                padding: const EdgeInsets.symmetric(vertical: 10),
-                children: const [
-                  TypeFoodBar(),
-                  AdvertiseList(),
-                  RecomendationList(title: "Rodizios recomendados!"),
-                  RecomendationList(title: "Explosão de sabor!"),
-                  RestaurantSelector(),
+              child: Stack(
+                children: [
+                  Positioned(
+                    child: ListView(
+                      shrinkWrap: true,
+                      physics: const ClampingScrollPhysics(),
+                      scrollDirection: Axis.vertical,
+                      addAutomaticKeepAlives: true,
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      children: const [
+                        TypeFoodBar(),
+                        AdvertiseList(),
+                        RecomendationList(title: "Rodizios recomendados!"),
+                        RecomendationList(title: "Explosão de sabor!"),
+                        RestaurantSelector(),
+                      ],
+                    ),
+                  ),
+                  const Positioned.fill(
+                    child: Align(
+                      alignment: Alignment.topCenter,
+                      child: RodGeoLocator(),
+                    ),
+                  )
                 ],
               ),
             ),

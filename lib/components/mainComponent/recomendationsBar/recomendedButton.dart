@@ -8,7 +8,7 @@ class RecomendedButton extends StatelessWidget {
     return Container(
       width: 100,
       height: 100,
-      margin: EdgeInsets.only(right: 30),
+      margin: const EdgeInsets.symmetric(horizontal: 10),
       child: Stack(
         children: [
           Positioned(
@@ -18,7 +18,7 @@ class RecomendedButton extends StatelessWidget {
               width: 85,
               height: 85,
               decoration: ShapeDecoration(
-                color: Color(0xFFA71D31),
+                color: const Color(0xFFA71D31),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
